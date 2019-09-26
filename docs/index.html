@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="robots" content="all" />
+  <meta name="keywords" content="изучение, учебник, flexbox, justify-content, align-items, flex-direction, flex-wrap" />
+  <meta name="description" content="Игра для изучения CSS Flexbox" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="author" content="CANVASGROUP: rust4mchik • sashaK" />
+  <meta property="og:title" content="Учебник по Flexbox" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Игра для изучения CSS Flexbox" />
+  <meta property="og:image" content="https://pp.userapi.com/c851024/v851024069/1592b5/uholw77dF64.jpg" />
+  <meta property="og:url" content="https://rust4mchik.github.io/FlexboxBook/" />
+  <title>Учебник по Flexbox</title>
+  <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+
+  <main id="root">
+    <header class="nav">
+      <div class="nav-content">
+        <div class="nav-content__btn">
+          <span class="lines"></span>
+        </div>
+        <div class="nav-content__logo">
+          <h1>Учебник по Flexbox</h1>
+        </div>
+        <div class="nav-content__tools">
+          <div class="tool hint" title="Подсказка" trigger="hint">
+            <svg x="0px" y="0px" viewBox="-49 0 512 512" width="36px" height="36px" class="">
+              <g>
+                <path d="m159.167969 392.585938h96v69.414062h-96zm0 0" fill="#6a80ff" data-original="#6A80FF" class=""
+                  style="fill:#CCCCCC" data-old_color="#A4A1A1" />
+                <path
+                  d="m159.167969 462v.332031c0 21.910157 17.757812 39.667969 39.667969 39.667969h16.667968c21.90625 0 39.664063-17.757812 39.664063-39.667969v-.332031zm0 0"
+                  fill="#a7c5ff" data-original="#A7C5FF" class="" style="fill:#CCCCCC" data-old_color="#A4A1A1" />
+                <path
+                  d="m339.167969 207.167969c0-72.316407-58.15625-131.054688-130.253907-131.988281-73.117187-.949219-133.527343 58.460937-133.746093 131.585937-.117188 39.839844 17.417969 75.585937 45.222656 99.867187 24.363281 21.273438 38.777344 51.71875 38.777344 84.0625v1.886719h96v-.96875c0-32.320312 13.675781-63.335937 38.15625-84.441406 28.070312-24.203125 45.84375-60.027344 45.84375-100.003906zm0 0"
+                  fill="#FFFFFF" data-original="#FEDA9B" class="active-path svg-hover" />
+                <path
+                  d="m207.167969 328.585938c-11.046875 0-20 8.953124-20 20v44h40v-44c0-11.046876-8.953125-20-20-20zm0 0"
+                  fill="#fff" data-original="#FFF" class="" style="fill:#CCCCCC" data-old_color="#CCCBCB" />
+                <path
+                  d="m308.191406 107.378906c-26.398437-26.726562-61.609375-41.710937-99.144531-42.199218-38.074219-.496094-74.070313 14.035156-101.378906 40.910156-27.292969 26.859375-42.386719 62.601562-42.5 100.644531-.121094 41.175781 17.609375 80.332031 48.644531 107.429687 22.46875 19.617188 35.355469 47.515626 35.355469 76.53125v71.636719c0 27.386719 22.28125 49.667969 49.667969 49.667969h16.667968c27.382813 0 49.664063-22.28125 49.664063-49.667969v-70.71875c0-29.84375 12.640625-57.859375 34.683593-76.867187 31.339844-27.019532 49.316407-66.234375 49.316407-107.578125 0-37.601563-14.550781-73.042969-40.976563-99.789063zm-101.148437 171.773438h-6.632813c-3.625 0-6.574218-2.949219-6.574218-6.578125 0-3.625 2.949218-6.574219 6.574218-6.574219 3.65625 0 6.632813 2.976562 6.632813 6.632812zm.125 59.433594c5.515625 0 10 4.484374 10 10v34h-20v-34c0-5.515626 4.484375-10 10-10zm38 64v14.707031h-76v-14.707031zm-76 34.707031h76v14.707031h-76zm46.332031 54.707031h-16.664062c-12.976563 0-24.023438-8.375-28.042969-20h72.75c-4.019531 11.625-15.066407 20-28.042969 20zm71.292969-192.398438c-24.207031 20.871094-38.96875 50.726563-41.300781 82.984376h-8.324219v-34c0-8.929688-3.925781-16.953126-10.132813-22.453126 0-.042968.007813-.085937.007813-.132812v-32.867188c8.144531-5.84375 13.457031-15.390624 13.457031-26.15625v-15.488281c0-21.304687-17.332031-38.640625-38.640625-38.640625h-18.023437c-5.523438 0-10 4.476563-10 10 0 5.523438 4.476562 10 10 10h18.023437c10.28125 0 18.640625 8.363282 18.640625 18.640625v3.679688c-4.886719-5.613281-12.078125-9.167969-20.089844-9.167969-14.652344 0-26.574218 11.921875-26.574218 26.578125 0 14.652344 11.921874 26.574219 26.574218 26.574219h6.632813v19.4375c-16.484375.066406-29.875 13.496094-29.875 29.996094v34h-8.277344c-2.191406-31.832032-17.195313-61.898438-41.921875-83.488282-26.671875-23.28125-41.90625-56.925781-41.800781-92.300781.097656-32.664063 13.070312-63.367187 36.53125-86.453125 23.472656-23.101562 54.375-35.59375 87.085937-35.164062 66.378906.859374 120.382813 55.585937 120.382813 121.988281 0 35.523437-15.445313 69.210937-42.375 92.433593zm0 0"
+                  data-original="#000000" class="" style="fill:#1D1E31" data-old_color="#1d1e31" />
+                <path
+                  d="m209.1875 113.820312h-.15625c-5.511719-.054687-10 4.363282-10.066406 9.882813-.0625 5.523437 4.410156 10.054687 9.933594 10.117187h.152343.121094c5.464844 0 9.882813-4.398437 9.945313-9.882812.066406-5.523438-4.40625-10.050781-9.929688-10.117188zm0 0"
+                  data-original="#000000" class="" style="fill:#1D1E31" data-old_color="#1d1e31" />
+                <path
+                  d="m253.175781 125.554688c-4.828125-2.6875-10.917969-.953126-13.605469 3.875-2.683593 4.824218-.953124 10.914062 3.875 13.601562 23.269532 12.957031 37.722657 37.53125 37.722657 64.136719 0 5.523437 4.476562 10 10 10 5.523437 0 10-4.476563 10-10 0-33.855469-18.390625-65.125-47.992188-81.613281zm0 0"
+                  data-original="#000000" class="" style="fill:#1D1E31" data-old_color="#1d1e31" />
+                <path
+                  d="m207.167969 47c5.523437 0 10-4.476562 10-10v-27c0-5.523438-4.476563-10-10-10-5.523438 0-10 4.476562-10 10v27c0 5.523438 4.476562 10 10 10zm0 0"
+                  data-original="#000000" class="" style="fill:#1D1E31" data-old_color="#1d1e31" />
+                <path
+                  d="m404.335938 197.167969h-27c-5.523438 0-10 4.476562-10 10 0 5.523437 4.476562 10 10 10h27c5.523437 0 10-4.476563 10-10 0-5.523438-4.476563-10-10-10zm0 0"
+                  data-original="#000000" class="" style="fill:#1D1E31" data-old_color="#1d1e31" />
+                <path
+                  d="m37 197.167969h-27c-5.523438 0-10 4.476562-10 10 0 5.523437 4.476562 10 10 10h27c5.523438 0 10-4.476563 10-10 0-5.523438-4.476562-10-10-10zm0 0"
+                  data-original="#000000" class="" style="fill:#1D1E31" data-old_color="#1d1e31" />
+                <path
+                  d="m334.566406 320.425781c-3.90625-3.90625-10.238281-3.90625-14.144531 0-3.902344 3.902344-3.902344 10.234375 0 14.140625l19.09375 19.09375c1.953125 1.949219 4.511719 2.929688 7.070313 2.929688 2.558593 0 5.117187-.980469 7.070312-2.929688 3.90625-3.90625 3.90625-10.238281 0-14.144531zm0 0"
+                  data-original="#000000" class="" style="fill:#1D1E31" data-old_color="#1d1e31" />
+                <path
+                  d="m79.769531 93.910156c1.953125 1.953125 4.511719 2.929688 7.070313 2.929688s5.121094-.976563 7.070312-2.929688c3.90625-3.902344 3.90625-10.234375 0-14.140625l-19.089844-19.09375c-3.90625-3.902343-10.238281-3.902343-14.144531 0-3.90625 3.90625-3.902343 10.238281 0 14.144531zm0 0"
+                  data-original="#000000" class="" style="fill:#1D1E31" data-old_color="#1d1e31" />
+                <path
+                  d="m339.515625 60.679688-19.089844 19.089843c-3.90625 3.90625-3.90625 10.238281 0 14.144531 1.953125 1.953126 4.511719 2.929688 7.070313 2.929688s5.117187-.976562 7.070312-2.929688l19.089844-19.09375c3.90625-3.90625 3.90625-10.238281 0-14.144531-3.902344-3.90625-10.234375-3.902343-14.140625.003907zm0 0"
+                  data-original="#000000" class="" style="fill:#1D1E31" data-old_color="#1d1e31" />
+                <path
+                  d="m79.769531 320.425781-19.089843 19.089844c-3.90625 3.90625-3.90625 10.238281 0 14.144531 1.953124 1.949219 4.511718 2.929688 7.070312 2.929688s5.117188-.980469 7.070312-2.929688l19.089844-19.09375c3.90625-3.90625 3.90625-10.238281 0-14.140625-3.902344-3.90625-10.234375-3.90625-14.140625 0zm0 0"
+                  data-original="#000000" class="" style="fill:#1D1E31" data-old_color="#1d1e31" />
+              </g>
+            </svg>
+          </div>
+          <div class="tool about" title="О ученике" trigger="about">
+            <svg x="0px" y="0px" viewBox="0 0 496.158 496.158" width="36px" height="36px" class="">
+              <g>
+                <path style="fill:#1D1E31"
+                  d="M496.158,248.085c0-137.022-111.069-248.082-248.075-248.082C111.07,0.003,0,111.063,0,248.085  c0,137.001,111.07,248.07,248.083,248.07C385.089,496.155,496.158,385.086,496.158,248.085z"
+                  data-original="#25B7D3" class="active-path" data-old_color="#1d1e31" />
+                <path
+                  d="M138.216,173.592c0-13.915,4.467-28.015,13.403-42.297c8.933-14.282,21.973-26.11,39.111-35.486  c17.139-9.373,37.134-14.062,59.985-14.062c21.238,0,39.99,3.921,56.25,11.755c16.26,7.838,28.818,18.495,37.683,31.97  c8.861,13.479,13.293,28.125,13.293,43.945c0,12.452-2.527,23.367-7.581,32.739c-5.054,9.376-11.062,17.469-18.018,24.279  c-6.959,6.812-19.446,18.275-37.463,34.388c-4.981,4.542-8.975,8.535-11.975,11.976c-3.004,3.443-5.239,6.592-6.702,9.447  c-1.466,2.857-2.603,5.713-3.406,8.57c-0.807,2.855-2.015,7.875-3.625,15.051c-2.784,15.236-11.501,22.852-26.147,22.852  c-7.618,0-14.028-2.489-19.226-7.471c-5.201-4.979-7.8-12.377-7.8-22.192c0-12.305,1.902-22.962,5.713-31.97  c3.808-9.01,8.861-16.92,15.161-23.73c6.296-6.812,14.794-14.904,25.488-24.28c9.373-8.202,16.15-14.392,20.325-18.567  c4.175-4.175,7.69-8.823,10.547-13.953c2.856-5.126,4.285-10.691,4.285-16.699c0-11.718-4.36-21.605-13.074-29.663  c-8.717-8.054-19.961-12.085-33.728-12.085c-16.116,0-27.981,4.065-35.596,12.195c-7.618,8.13-14.062,20.105-19.336,35.925  c-4.981,16.555-14.43,24.829-28.345,24.829c-8.206,0-15.127-2.891-20.764-8.679C141.035,186.593,138.216,180.331,138.216,173.592z   M245.442,414.412c-8.937,0-16.737-2.895-23.401-8.68c-6.667-5.784-9.998-13.877-9.998-24.279c0-9.229,3.22-16.991,9.668-23.291  c6.444-6.297,14.354-9.448,23.73-9.448c9.229,0,16.991,3.151,23.291,9.448c6.296,6.3,9.448,14.062,9.448,23.291  c0,10.255-3.296,18.312-9.888,24.17C261.7,411.481,254.084,414.412,245.442,414.412z"
+                  fill="#FFFFFF" class="svg-hover" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="app">
+      <div id="board">
+        <div id="container">
+          <div class="human denis">
+            <div class="bg"></div>
+          </div>
+        </div>
+        <div id="background" style="justify-content: flex-end;">
+          <div class="car jiga">
+            <div class="bg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="editor">
+    <div id="css">
+      <div id="line-numbers">
+        1<br />2<br />3<br />4<br />5<br />6<br />7
+      </div>
+      <pre id="before">
+                  #container {
+                  <span id="code-default">
+                      display: flex;
+                  </span>
+              </pre>
+      <textarea id="code" autofocus=""></textarea>
+      <pre id="after">}</pre>
+      <div class="turn-btn">Свернуть редактор</div>
+      <div id="next">Следующий</div>
+    </div>
+  </div>
+  <div class="menu-adaptiv">
+    <div class="mask"></div>
+    <div class="menu-adaptiv__container">
+      <div class="adaptiv-header">
+        Уроки:
+        <div id="reset">
+          Сбросить
+        </div>
+      </div>
+      <div class="adaptiv-content">
+        <div class="adaptiv-content__lesson active">
+          <div class="lesson active first" data-lesson="0">
+            <span>Урок 1: Знакомство с justify-content</span>
+          </div>
+          <div class="sublesson-container">
+            <div class="lesson sublesson" data-lesson="1">
+              <span>Урок 1.1: Значение center</span>
+            </div>
+            <div class="lesson sublesson" data-lesson="2">
+              <span>Урок 1.2: Значение space-around</span>
+            </div>
+            <div class="lesson sublesson" data-lesson="3">
+              <span>Урок 1.3: Значение space-between</span>
+            </div>
+          </div>
+        </div>
+        <div class="adaptiv-content__lesson">
+          <div class="lesson" data-lesson="4">
+            <span>Урок 2: Знакомство с align-items</span>
+          </div>
+          <div class="sublesson-container">
+            <div class="lesson sublesson" data-lesson="5">
+              <span>Урок 2.1: Сочетание двух свойств</span>
+            </div>
+            <div class="lesson sublesson" data-lesson="6">
+              <span>Урок 2.2: Сочетание двух свойств</span>
+            </div>
+          </div>
+        </div>
+        <div class="adaptiv-content__lesson">
+          <div class="lesson" data-lesson="7">
+            <span>Урок 3: Знакомство с flex-direction</span>
+          </div>
+          <div class="sublesson-container">
+            <div class="lesson sublesson" data-lesson="8">
+              <span>Урок 3.1: Знакомство с row-reverse</span>
+            </div>
+            <div class="lesson sublesson" data-lesson="9">
+              <span>Урок 3.2: Сочетание двух свойств</span>
+            </div>
+            <div class="lesson sublesson" data-lesson="10">
+              <span>Урок 3.3: Сочетание трех свойств</span>
+            </div>
+          </div>
+        </div>
+        <div class="adaptiv-content__lesson">
+          <div class="lesson" data-lesson="11">
+            <span>Урок 4: Знакомство с flex-wrap</span>
+          </div>
+          <div class="sublesson-container">
+            <div class="lesson sublesson" data-lesson="12">
+              <span>Урок 4.1: Сочетание двух свойств</span>
+            </div>
+            <div class="lesson sublesson" data-lesson="13">
+              <span>Урок 4.2: Новое свойство flex-flow</span>
+            </div>
+          </div>
+        </div>
+        <div class="adaptiv-content__lesson">
+          <div class="lesson" data-lesson="14">
+            <span>Урок 5: Финальное испытание</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay">
+    <div class="overlay-wrapper">
+      <div class="modal about-app fade" id="about">
+        <h2>Учебник по Flexbox</h2>
+        <p>
+          Добро пожаловать в учебник. Учебник, в котором под средством мини-игры, изучай свойства flexbox'a и помогай
+          Денису и его друзьям написанием CSS кода! Направляй Дениса и его друзей к их машинам используя изученные
+          свойства flexbox'a. Встретил сложность? Нажимай на лампочку в правом верхнем углу и используй подсказку.
+        </p>
+        <div class="authors">
+          Сайт создан by CANVAS GROUP:
+          <a href="https://vk.com/rustam4ikru" target="_blank">rust4mchik</a>
+          • <a href="https://vk.com/sasha.kravchenko99" target="_blank">sashaK</a>
+          • <a href="https://github.com/rust4mchik/flexboxbook" target="_blank">GitHub</a>
+        </div>
+        <div class="btn-close" title="Закрыть"></div>
+      </div>
+      <div class="modal help fade" id="hint">
+        <h2>Урок №1</h2>
+        <p>
+          Направь Дениса к его машине используя свойство
+          <code>justify-content</code>, которое выравнивает элементы горизонтально и принимает следующие значения:
+        </p>
+        <ul>
+          <li><code>flex-start</code>: Элементы выравниваются по левой стороне контейнера.</li>
+          <li><code>flex-end</code>: Элементы выравниваются по правой стороне контейнера.</li>
+          <li><code>center</code>: Элементы выравниваются по центру контейнера.</li>
+          <li><code>space-between</code>: Элементы отображаются с одинаковыми отступами между ними.</li>
+          <li><code>space-around</code>: Элементы отображаются с одинаковыми отступами вокруг них.</li>
+        </ul>
+        <p>
+          Например,
+          <code>justify-content: flex-end;</code>
+          сдвинет Дениса вправо.
+        </p>
+        <div class="btn-close__help btn-close" title="Закрыть"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

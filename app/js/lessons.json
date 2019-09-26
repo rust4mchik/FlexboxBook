@@ -1,0 +1,232 @@
+{
+  "alerts": [{
+      "check": "justify-content",
+      "alert": "Выравнивает flex-элементы горизонтально. <br /><code>flex-start</code><code>flex-end</code><code>center</code><code>space-between</code><code>space-around</code>"
+    },
+    {
+      "check": "align-items",
+      "alert": "Выравнивает flex-элементы вертикально.<br /><code>flex-start</code><code>flex-end</code><code>center</code><code>baseline</code><code>stretch</code>"
+    },
+    {
+      "check": "flex-direction",
+      "alert": "Задает направление расположения flex-элементов.<br /><code>row</code><code>row-reverse</code><code>column</code><code>column-reverse</code>"
+    },
+    {
+      "check": "flex-wrap",
+      "alert": "Указывает, нужно ли чтоб элементы принудительно находились в одном ряду или автоматически переносились.<br /><code>nowrap</code><code>wrap</code><code>wrap-reverse</code>"
+    },
+    {
+      "check": "flex-flow",
+      "alert": "Свойство для быстрой записи <code>flex-direction</code><code>flex-wrap</code>.<br /><code>&lt;flex-direction&gt; &lt;flex-wrap&gt;</code>"
+    }
+  ],
+  "lessons": [{
+      "title": "Урок №1",
+      "description": "Направь Дениса к его машине используя свойство <code data-alert='0'>justify-content</code>, которое выравнивает элементы горизонтально и принимает следующие значения:",
+      "ul": [{
+          "li": "<code>flex-start</code>: Элементы выравниваются по левой стороне контейнера."
+        },
+        {
+          "li": "<code>flex-end</code>: Элементы выравниваются по правой стороне контейнера."
+        },
+        {
+          "li": "<code>center</code>: Элементы выравниваются по центру контейнера."
+        },
+        {
+          "li": "<code>space-between</code>: Элементы отображаются с одинаковыми отступами между ними."
+        },
+        {
+          "li": "<code>space-around</code>: Элементы отображаются с одинаковыми отступами вокруг них."
+        }
+      ],
+      "hint": "Например, <code>justify-content: flex-end;</code> сдвинет Дениса вправо.",
+      "container": "<div class='human denis'><div class='bg'></div></div>",
+      "background": "<div class='car jiga'><div class='bg'></div></div>",
+      "css": "justify-content: flex-end;"
+    },
+    {
+      "title": "Урок №1.1",
+      "description": "Используй <code data-alert='0'>justify-content</code> ещё раз, чтоб помочь Денису и Егору попасть к их машинам. Помни, что это свойство CSS выравнивает элементы горизонтально и принимает следующие значения:",
+      "ul": [{
+          "li": "<code>flex-start</code>: Элементы выравниваются по левой стороне контейнера."
+        },
+        {
+          "li": "<code>flex-end</code>: Элементы выравниваются по правой стороне контейнера."
+        },
+        {
+          "li": "<code>center</code>: Элементы выравниваются по центру контейнера."
+        },
+        {
+          "li": "<code>space-between</code>: Элементы отображаются с одинаковыми отступами между ними."
+        },
+        {
+          "li": "<code>space-around</code>: Элементы отображаются с одинаковыми отступами вокруг них."
+        }
+      ],
+      "container": "<div class='human denis'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div>",
+      "background": "<div class='car jiga'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div>",
+      "css": "justify-content: center;"
+    },
+    {
+      "title": "Урок №1.2",
+      "description": "Помоги им всем найти их машины, просто используя <code data-alert='0'>justify-content</code>. В этот раз, у машин много пространства вокруг.",
+      "hint": "Если ты чувствуешь, что забыл возможные значения свойства, ты можешь навести курсор на название свойства, чтоб посмотреть их. Попробуй навести курсор на <code data-alert='0'>justify-content</code>.",
+      "container": "<div class='human denis'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div>",
+      "background": "<div class='car jiga'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div>",
+      "css": "justify-content: space-around;"
+    },
+    {
+      "title": "Урок №1.3",
+      "description": "Теперь машины находятся по краям. Используй <code data-alert='0'>justify-content</code>. В этот раз, у машин одинаковое расстояние между ними.",
+      "container": "<div class='human denis'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div>",
+      "background": "<div class='car jiga'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div>",
+      "css": "justify-content: space-between;"
+    },
+    {
+      "title": "Урок №2",
+      "description": "Теперь используй <code data-alert='1'>align-items</code>, чтобы помочь Денису и его друзьям добратся к их машинам, которые находятся в нижней части контейнера. Это CSS свойство выравнивает элементы вертикально и принимает следующие значения:",
+      "ul": [{
+          "li": "<code>flex-start</code>: Элементы выравниваются по верхнему краю контейнера."
+        },
+        {
+          "li": "<code>flex-end</code>: Элементы выравниваются по нижнему краю контейнера."
+        },
+        {
+          "li": "<code>center</code>: Элементы выравниваются вертикально по центру контейнера."
+        },
+        {
+          "li": "<code>baseline</code>: Элементы отображаются на базовой линии контейнера."
+        },
+        {
+          "li": "<code>stretch</code>: Элементы растягиваются, чтоб заполнить контейнер."
+        }
+      ],
+      "container": "<div class='human denis'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div>",
+      "background": "<div class='car jiga'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div>",
+      "css": "align-items: flex-end;"
+    },
+    {
+      "title": "Урок №2.1",
+      "description": "Направь Дениса в центр контейнера к его машине, используя <code data-alert='0'>justify-content</code> и <code data-alert='1'>align-items</code> вместе.",
+      "container": "<div class='human denis'><div class='bg'></div></div>",
+      "background": "<div class='car jiga'><div class='bg'></div></div>",
+      "css": "justify-content: center; align-items: center;"
+    },
+    {
+      "title": "Урок №2.2",
+      "description": "Денису и его друзьям снова нужно попасть в конец контейнера. В этот раз между машинами и вокруг них достаточно большое пространство. Используй комбинацию <code data-alert='0'>justify-content</code> и <code data-alert='1'>align-items</code>.",
+      "container": "<div class='human denis'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div>",
+      "background": "<div class='car jiga'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div>",
+      "css": "justify-content: space-around; align-items: flex-end;"
+    },
+    {
+      "title": "Урок №3",
+      "description": "Ребятам нужно выстроиться в порядке их машин, используя <code data-alert='2'>flex-direction</code>. Это CSS свойство задает направление, в котором будут расположены элементы в контейнере и принимает следующие значения:",
+      "ul": [{
+          "li": "<code>row</code>: Элементы размещаются по направлению текста."
+        },
+        {
+          "li": "<code>row-reverse</code>: Элементы отображаются в обратном порядке к направлению текста."
+        },
+        {
+          "li": "<code>column</code>: Элементы распологаются сверху вниз."
+        },
+        {
+          "li": "<code>column-reverse</code>: Элементы распологаются снизу вверх."
+        }
+      ],
+      "container": "<div class='human denis'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div>",
+      "background": "<div class='car jiga'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div>",
+      "css": "flex-direction: column;"
+    },
+    {
+      "title": "Урок №3.1",
+      "description": "Помоги ребятам распложиться на их машины, используя <code data-alert='2'>flex-direction</code>. Это CSS свойство задает направление, в котором будут расположены элементы в контейнере и принимает следующие значения:",
+      "ul": [{
+          "li": "<code>row</code>: Элементы размещаются по направлению текста."
+        },
+        {
+          "li": "<code>row-reverse</code>: Элементы отображаются в обратном порядке к направлению текста."
+        },
+        {
+          "li": "<code>column</code>: Элементы распологаются сверху вниз."
+        },
+        {
+          "li": "<code>column-reverse</code>: Элементы распологаются снизу вверх."
+        }
+      ],
+      "container": "<div class='human denis'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div>",
+      "background": "<div class='car jiga'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div>",
+      "css": "flex-direction: row-reverse;"
+    },
+    {
+      "title": "Урок №3.2",
+      "description": "Помоги ребятам попасть к их машинам. Хоть и кажется, что они почти на своих местах, все же придется применить и <code data-alert='2'>flex-direction</code> и <code data-alert='0'>justify-content</code>, чтоб поместить их к своим машинам.",
+      "container": "<div class='human denis'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div>",
+      "background": "<div class='car jiga'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div>",
+      "css": "flex-direction: row-reverse; justify-content: flex-end;"
+    },
+    {
+      "title": "Урок №3.3",
+      "description": "Помоги ребятам найти их машины с помощью <code data-alert='2'>flex-direction</code>, <code data-alert='0'>justify-content</code> и <code data-alert='1'>align-items</code>.",
+      "container": "<div class='human denis'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div>",
+      "background": "<div class='car jiga'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div>",
+      "css": "flex-direction: row-reverse; justify-content: center; align-items: flex-end;"
+    },
+    {
+      "title": "Урок №4",
+      "description": "О нет! Ребят слишком много на одном ряду машин. Помоги им спуститься с помощью свойства <code data-alert='3'>flex-wrap</code>, которое принимает следующие значения:",
+      "ul": [{
+          "li": "<code>nowrap</code>: Размеры элементов устанавливаются автоматически, чтоб они поместились в один ряд."
+        },
+        {
+          "li": "<code>wrap</code>: Элементы автоматически переносятся на новую строку."
+        },
+        {
+          "li": "<code>wrap-reverse</code>: Элементы автоматически переносятся на новую строку, но строки расположены в обратном порядке."
+        }
+      ],
+      "container": "<div class='human egor'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div><div class='human denis'><div class='bg'></div></div>",
+      "background": "<div class='car largus'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div><div class='car jiga'><div class='bg'></div></div>",
+      "css": "flex-wrap: wrap;"
+    },
+    {
+      "title": "Урок №4.1",
+      "description": "Помоги этой армии ребят выстроиться в три колонки с помощью комбинации <code data-alert='2'>flex-direction</code> и <code data-alert='3'>flex-wrap</code>.",
+      "container": "<div class='human denis'><div class='bg'></div></div><div class='human denis'><div class='bg'></div></div><div class='human denis'><div class='bg'></div></div><div class='human denis'><div class='bg'></div></div><div class='human denis'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div>",
+      "background": "<div class='car jiga'><div class='bg'></div></div><div class='car jiga'><div class='bg'></div></div><div class='car jiga'><div class='bg'></div></div><div class='car jiga'><div class='bg'></div></div><div class='car jiga'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div>",
+      "css": "flex-direction: column; \n flex-wrap: wrap;"
+    },
+    {
+      "title": "Урок №4.2",
+      "description": "Два свойства <code data-alert='2'>flex-direction</code> и <code data-alert='3'>flex-wrap</code> используются так часто вместе, что было создано свойство <code data-alert='4'>flex-flow</code> для их комбинирования. Это свойство принимает значения двух этих свойств, разделеные пробелом.",
+      "hint": "Например, ты можешь использовать <code>flex-flow: row wrap</code>, чтоб элементы располагались в ряд и автоматически переносились на новую строку. <p>Попробуй использовать <code data-alert='4'>flex-flow</code>, чтоб повторить предыдущий уровень.</p>",
+      "container": "<div class='human denis'><div class='bg'></div></div><div class='human denis'><div class='bg'></div></div><div class='human denis'><div class='bg'></div></div><div class='human denis'><div class='bg'></div></div><div class='human denis'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div>",
+      "background": "<div class='car jiga'><div class='bg'></div></div><div class='car jiga'><div class='bg'></div></div><div class='car jiga'><div class='bg'></div></div><div class='car jiga'><div class='bg'></div></div><div class='car jiga'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div>",
+      "css": "flex-flow: column wrap;"
+    },
+    {
+      "title": "Урок №5",
+      "description": "Доставь ребят к их машинам в последний раз, используя CSS свойства, которые ты выучил:",
+      "ul": [{
+          "li": "<code data-alert='0'>justify-content</code>"
+        },
+        {
+          "li": "<code data-alert='1'>align-items</code>"
+        },
+        {
+          "li": "<code data-alert='2'>flex-direction</code>"
+        },
+        {
+          "li": "<code data-alert='3'>flex-wrap</code>"
+        },
+        {
+          "li": "<code data-alert='4'>flex-flow</code>"
+        }
+      ],
+      "container": "<div class='human denis'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div><div class='human egor'><div class='bg'></div></div></div><div class='human nekit'><div class='bg'></div></div><div class='human nekit'><div class='bg'></div></div>",
+      "background": "<div class='car jiga'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car largus'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div><div class='car rio'><div class='bg'></div></div>",
+      "css": "flex-flow: column-reverse wrap-reverse; justify-content: center; align-items: flex-end;"
+    }
+  ]
+}
